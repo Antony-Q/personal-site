@@ -84,3 +84,22 @@ body {
 .resume-link:hover, .project-link:hover {
     color: lightgrey;
 }
+
+/* Responsive media query for screens less than or equal to 600px */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .right-column {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 0;
+    }
+}
