@@ -10,3 +10,77 @@ body {
 .container {
     display: flex;
 }
+
+.left-column {
+    width: 25%;
+    position: fixed;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-list li {
+    background-color: #740d59; /* lighter purple */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+.right-column {
+    margin-left: 25%;
+    width: 75%;
+    padding: 20px;
+    overflow: auto;
+    color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.intro, .work-history, .projects, .blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job, .project, .blog-post {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project img, .blog-post img {
+    width: 100px;
+    height: 100px;
+}
+
+.resume-link, .project-link {
+    display: inline-block;
+    margin: 20px 0;
+    color: #6c757d; /* gray color */
+    text-decoration: none;
+}
+
+.resume-link:hover, .project-link:hover {
+    color: lightgrey;
+}
