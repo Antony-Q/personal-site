@@ -1,0 +1,19 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "my personal website to be used as a portfolio and resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antony-Q/personal-site.git"
+  },
+  "author": "Antony Q",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antony-Q/personal-site/issues"
+  },
+  "homepage": "https://github.com/Antony-Q/personal-site#readme"
+}

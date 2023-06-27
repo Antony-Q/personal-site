@@ -1,7 +1,14 @@
+:root {
+    --main-bg-color: #fafafa; /* Light Grey */
+    --main-font-color: #333; /* Dark Grey */
+    --accent-color: #3178C6; /* Bright Blue */
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
 body {
-    background-color: #2d132c; /* dark purple */
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,10 +22,16 @@ body {
     width: 25%;
     position: fixed;
     padding: 20px;
-    color: white;
+    color: var(--main-font-color);
     height: 100vh;
     box-sizing: border-box;
     overflow-y: auto;
+    background-color: #f0f0f0; /* Lighter Grey */
+}
+
+.left-column h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
 .nav-list {
@@ -30,9 +43,11 @@ body {
 }
 
 .nav-list li {
-    background-color: #740d59; /* lighter purple */
+    background-color: var(--accent-color);
     padding: 10px;
     border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
 
 .social-links {
@@ -51,7 +66,7 @@ body {
     width: 75%;
     padding: 20px;
     overflow: auto;
-    color: lightgrey;
+    color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -65,24 +80,34 @@ body {
 
 .job, .project, .blog-post {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align to top for better readability */
     gap: 20px;
+    border-bottom: 1px solid #ddd; /* Separator */
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .project img, .blog-post img {
     width: 100px;
     height: 100px;
+    object-fit: cover; /* Better image fitting */
+    border-radius: 5px; /* Rounded corners for images */
 }
 
 .resume-link, .project-link {
     display: inline-block;
     margin: 20px 0;
-    color: #6c757d; /* gray color */
+    color: var(--accent-color);
     text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .resume-link:hover, .project-link:hover {
-    color: lightgrey;
+    background-color: var(--accent-color);
+    color: white;
 }
 
 /* Responsive media query for screens less than or equal to 600px */
